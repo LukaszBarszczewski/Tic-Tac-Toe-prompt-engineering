@@ -1,0 +1,31 @@
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+table {
+    border-collapse: collapse;
+    display: inline-block;
+    margin: 20px auto;
+    border: none; /* Äußere Border entfernen */
+}
+td {
+    width: 50px;
+    height: 50px;
+    border: none; /* Keine Border für die Zellen */
+    padding: 0; /* Kein Innenabstand für die Zellen */
+    text-align: center;
+    font-size: 24px;
+}
+td:not(:last-child) {
+    border-right: 5px solid white; /* Nur rechte Trennlinien */
+}
+tr:not(:last-child) td {
+    border-bottom: 5px solid white; /* Nur untere Trennlinien */
+}
